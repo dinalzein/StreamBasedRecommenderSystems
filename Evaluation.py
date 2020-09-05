@@ -2,9 +2,9 @@ from Model import Model
 from KnnI import KnnI
 from KnnU import KnnU
 from MostPopular import MostPopular
-from MatrixFactorization import MatrixFactorization
-from MatrixFactorization_Negative_Feedback import MatrixFactorization_Negative_Feedback
-from MatrixFactorization_Negative_Feedback_BPR import MatrixFactorization_Negative_Feedback_BPR
+from MF import MF
+from MFNF import MFNF
+from MFBPR import MFBPR
 from Random import Random
 from Metric import Metric
 
@@ -70,10 +70,10 @@ class Evaluation(object):
             self.model_instance = KnnU(nb_neighbors, nb_items, nb_users)
 
         elif model_name == 'MF':
-            self.model_instance = MatrixFactorization(nb_features, epoch, regularization, learning_rate, nb_items, nb_users)
+            self.model_instance = MF(nb_features, epoch, regularization, learning_rate, nb_items, nb_users)
 
         elif model_name == 'MFNF':
-            self.model_instance = MatrixFactorization_Negative_Feedback(nb_features, epoch, regularization, learning_rate, nb_items, nb_users)
+            self.model_instance = MFNF(nb_features, epoch, regularization, learning_rate, nb_items, nb_users)
 
-        elif model_name == 'MFNFBPR':
-            self.model_instance = MatrixFactorization_Negative_Feedback_BPR(nb_features, epoch, batch, regularization, learning_rate, nb_items, nb_users)
+        elif model_name == 'MFBPR':
+            self.model_instance = MFBPR(nb_features, epoch, batch, regularization, learning_rate, nb_items, nb_users)

@@ -9,8 +9,8 @@ models = {
     "Rand": "Random Model",
     "MP": "Most Poular",
     "MF": "Matrix Factorization",
-    "MFNF": "Matrix Factorization with Negative Feedback",
-    "MFNFBPR": "Matrix Factorization with Negative Feedback, BPR approach"
+    "MFNF": "Matrix Factorization with Negative Feedback, vanilla approach",
+    "MFBPR": "Matrix Factorization with Negative Feedback, BPR approach"
 }
 
 metrics = {
@@ -138,7 +138,7 @@ if __name__ == "__main__":
         "--n",
         nargs = "+",
         default = [1],
-        help = " number of negative items you would like to consider for MF, MFNF, or MFNFBPR, (default:[1])"
+        help = " number of negative items you would like to consider for MF, MFNF, or MFBPR, (default:[1])"
     )
 
     parser.add_argument(

@@ -1,11 +1,13 @@
-#Stream Based Recommender Systems
+# Stream Based Recommender Systems
 
 __This repository aims at implementing different algorithms for stream based recommender systems. It includes different models:__
 1. [Most Popular (MP)](MP.py)
-2. Neighborhood-Based approaches: [user based (KKNU)](KnnU.py) and [item based (KNNI)](KnnI.py)
-3. [Matrix Factorization (MF)](MF.py)
-4. Matrix Factorization with Negative Feedback approaches: [vanilla one (MFNF)](MFNF.py) and [BPR method (MFBPR)](MFBPR.py)
-5. [Random model](Random.py)
+2. [K-Nearest Neighbors, user based](KnnU.py)
+3. [K-Nearest Neighbors, item based](KnnI.py)
+4. [Matrix Factorization (MF)](MF.py)
+5. [Matrix Factorization with Negative Feedback (MFNF)](MFNF.py)
+6. [Bayesian Personalized Ranking for Matrix Factorization (MFBPR)](MFBPR.py)
+7. [Random](Random.py)
 
 __For the evaluation of the models, we implement the following metrics:__
 1. Mean Reciprocal Rank (MRR)
@@ -19,7 +21,7 @@ To install the dependencies, run the following in the folder where [requirements
 pip install -r requirements.txt
 ```
 
-https://grouplens.org/datasets/movielens/1m/
+
 ## Datasets
 We will be using the [MovieLens datasets](https://grouplens.org/datasets/movielens/1m/) containing 1000209 interactions with 6040 users and 3706 items.
 

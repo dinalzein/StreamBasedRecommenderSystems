@@ -1,15 +1,15 @@
 # Stream Based Recommender Systems
 
-__This repository aims at implementing different algorithms for stream based recommender systems. It includes different models:__
+__This repository aims at implementing different algorithms for stream based recommender systems including:__
 1. [Most Popular (MP)](MP.py)
-2. [K-Nearest Neighbors, user based](KnnU.py)
-3. [K-Nearest Neighbors, item based](KnnI.py)
+2. [K-Nearest Neighbors, User Based (KNNU)](KnnU.py)
+3. [K-Nearest Neighbors, Item Based (KNNI)](KnnI.py)
 4. [Matrix Factorization (MF)](MF.py)
 5. [Matrix Factorization with Negative Feedback (MFNF)](MFNF.py)
 6. [Bayesian Personalized Ranking for Matrix Factorization (MFBPR)](MFBPR.py)
 7. [Random](Random.py)
 
-__For the evaluation of the models, we implement the following metrics:__
+__For evaluating of the models, we implement the following metrics:__
 1. Mean Reciprocal Rank (MRR)
 2. recall@N
 3. DCG@N
@@ -30,19 +30,19 @@ To evaluate the model, you need to pass some arguments in order to run correctly
 ```Bash
 python Run.py --help
 ```
-Otherwise, you can run the script using the default arguments:
+Otherwise, you can run the script with the default arguments:
 ```Bash
 python Run.py
 ```
 
-A [report](./report.pdf) has been made to give an overview of the papers cited in [Citation](#citation) and analyze the results of the experiments.
+A [report](./report.pdf) has been made to give an overview of the papers cited in and analyze the results of the experiments.
 
 
 ## Results for different algorithms
 For all results, larger is better.
 The results below present the evaluation of all the implemented algorithms for recall@N, DCG@N, and MRR metrics respectively. For neighborhood-based approaches, we averaged the results for ![equation](https://latex.codecogs.com/svg.image?K&space;\in&space;[5,&space;10,&space;20,&space;50,&space;100])
 
-| Algorithm          | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
+|                    | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
 |---                 |---      |---      |---      |---      |---      |---     
 Recall@1             | 0.00038 | 0.00875 | 0.00387 | 0.00221 | 0.00623 | 0.00623
 Recall@5             | 0.00170 | 0.03586 | 0.01714 | 0.05868 | 0.01407 | 0.01407
@@ -51,7 +51,7 @@ Recall@50            | 0.01579 | 0.21800 | 0.13212 | 0.28468 | 0.09258 | 0.11363
 Recall@100           | 0.031577| 0.33207 | 0.23051 | 0.37954 | 0.18685 | 0.21233
 
 
-| Algorithm          | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
+|                    | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
 |---                 |---      |---      |---      |---      |---      |---     
 DCG@1                | 0.00038 | 0.00087 | 0.0043  | 0.00256 | 0.00397 | 0.00024
 DCG@5                | 0.00170 | 0.00365 | 0.01951 | 0.05767 | 0.01016 | 0.00187
@@ -60,6 +60,6 @@ DCG@50               | 0.01588 | 0.02385 | 0.15113 | 0.42441 | 0.06184 | 0.02261
 DCG@100              | 0.03194 | 0.03786 | 0.26694 | 0.66884 | 0.06906 | 0.04359
 
 
-| Algorithm          | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
+|                    | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
 |---                 |---      |---      |---      |---      |---      |---     
 MRR                  | 0.00278 | 0.03206 | 0.01793 | 0.03819 | 0.01596 | 0.01637

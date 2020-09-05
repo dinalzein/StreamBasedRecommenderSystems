@@ -1,7 +1,7 @@
 from Model import Model
 from KnnI import KnnI
 from KnnU import KnnU
-from MostPopular import MostPopular
+from MP import MP
 from MF import MF
 from MFNF import MFNF
 from MFBPR import MFBPR
@@ -61,7 +61,7 @@ class Evaluation(object):
             self.model_instance = Random(nb_items)
 
         elif model_name == 'MP':
-            self.model_instance = MostPopular()
+            self.model_instance = MP()
 
         elif model_name == 'KnnI':
             self.model_instance = KnnI(nb_neighbors, nb_items)

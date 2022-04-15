@@ -10,11 +10,9 @@ __This repository aims at implementing different algorithms for stream based rec
 7. [Random](Random.py)
 
 __For evaluating of the models, we implement the following metrics:__
-\begin{enumerate}  
-  \item Mean Reciprocal Rank (MRR)
-  \item recall@N
-  \item DCG@N
-\end{enumerate}
+1. Mean Reciprocal Rank (MRR)
+2. recall@N
+3. DCG@N
 
 ## Setup environment
 

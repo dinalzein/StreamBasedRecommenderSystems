@@ -9,7 +9,7 @@ __This repository aims at implementing different algorithms for stream based rec
 6. [Bayesian Personalized Ranking for Matrix Factorization (MFBPR)](MFBPR.py)
 7. [Random](Random.py)
 
-__For evaluating of the models, we implement the following metrics:__
+__For evaluating the models, we implement the following metrics:__
 1. Mean Reciprocal Rank (MRR)
 2. recall@N
 3. DCG@N
@@ -40,7 +40,7 @@ A [report](./report.pdf) has been made to give an overview of the papers cited i
 
 ## Results for different algorithms
 For all results, larger is better.
-The results below present the evaluation of all the implemented algorithms for recall@N, DCG@N, and MRR metrics respectively. For neighborhood-based approaches, we averaged the results for K = [5, 10, 20, 50, 100]
+The results below present the evaluation of all the implemented algorithms for recall@N, DCG@N, and MRR metrics. For neighborhood-based approaches, we averaged the results for K = [5, 10, 20, 50, 100]
 
 |                    | Random  |  MP     | MF      | MFNF    | KNNU    | KNNI
 |---                 |---      |---      |---      |---      |---      |---     
